@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- top portion starts-->
+    <div class="top">
+        <div class="budget">
+            <div class="budget_title">
+                Available Budget In <span class="budget__title--month">%month%</span>
+                <div class="budget_value">+ 2,367.76</div>
+            </div>
+            <div class="budget_income">
+                <div class="budget__income--text">Income</div>                
+                <div class="budget__income--value">+ 4,949</div>
+            </div>
+            <div class="budget_expenses">
+                <div class="budget__expenses--text">Expenses</div>
+                <div class="bdgt">
+                    <div class="budget__expenses--value">+ 3,928</div>
+                    <div class="budget__expenses--percentage">45%</div>
+                </div>      
+            </div>
+        </div>
+    </div>
+    <!-- top portion ends-->
+
+    <!-- bottom portion starts-->
+    <div class="bottom">
+        <!-- all the input will be held here-->
+        <div class="add">
+            <div class="add__container">
+                <select class="add__type">
+                    <option value="inc" selected>+</option>
+                    <option value="exp">-</option>
+                </select>
+                <input type="text" class="add__description" placeholder="Add description">
+                <input type="number" class="add__value" placeholder="Value">
+                <button class="add__btn">ADD</button>
+            </div>
+        </div>
+        <!-- all inputs are end-->
+        
+        <div class="container">
+            <div class="income">
+                <h2 class="income__title">Income</h2>
+
+                <div class="income__list">
+                <!-- for the no of income list -->
+                <!--  
+                <div class="item" id="inc-%id%">
+                    <div class="right">
+                        <div class="item__description">%descripton%</div>
+                        <div class="item__value">+ %value%</div>
+                    </div>    
+                    <div class="item__delete">
+                        <button class="item__delete--btn btn__income">x</button>
+                    </div>    
+                </div>
+
+                    <div class="item" id="income-1">
+                        <div class="right">
+                                <div class="item__description">youtube</div>
+                            <div class="item__value">+2,930</div>
+                        </div>
+                        <div class="item__delete">
+                            <button class="item__delete--btn btn__income">x</button>
+                        </div>        
+                    </div>
+                -->
+                </div>
+            </div>
+
+            <!-- for the no of expences list-->
+            <div class="expenses">
+                <h2 class="expenses__title">Expenses</h2>
+
+                <div class="expenses__list">
+                    <!--
+                    <div class="item" id="exp-%id%">
+                        <div class="right">
+                            <div class="item__description">%descripton%</div>
+                            <div class="perc">    
+                                <div class="item__value">- %value%</div>
+                                <div class="item__percentage">21%</div>
+                            </div>    
+                        </div>    
+                        <div class="item__delete">
+                            <button class="item__delete--btn btn__expenses">x</button>
+                        </div>
+                    </div>
+
+                    <div class="item" id="expenses-1">
+                        <div class="right">
+                        <div class="item__description">Rent</div>
+                        <div class="perc">
+                            <div class="item__value">-2,930</div>
+                            <div class="item__percentage">10%</div>
+                        </div>
+                        </div>
+                        <div class="item__delete">
+                            <button class="item__delete--btn btn__expenses">x</button>
+                        </div>
+                    </div>
+                -->
+                </div>
+            </div>
+        </div>
+        <img src="img.jpg" alt="">
+    </div>
+    <script src="app.js"></script>    
+</body>
+</html>

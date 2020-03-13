@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: open sans;
+}
+body {
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+/*top */
+.top {
+    height: 40vh;
+    margin: 0 5%;
+}
+.budget {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 50% 25% 25%;
+    align-items: center;
+}
+.budget_title {
+    font-size: 150%;
+    height: 150px;
+    letter-spacing: 3px;
+}
+.budget_value{
+    padding-top: 15px;
+    font-size: 70px;
+    background: linear-gradient(145deg,#beb2c8 ,#028b90 ,#032d67 ,#5d50c2 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.budget_income {
+    grid-column: 2/3;
+    justify-self: center;
+    height: 140px;
+    width: 250px;
+    background: linear-gradient(155deg, #beb2c8,#2bcdd0);
+    border-radius: 10px;
+    padding: 11px;   
+    box-shadow: 2px 5px 8px 1px #161616 
+}
+.budget__income--text,
+.budget__expenses--text {
+    font-size: 180%;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.budget__income--value,
+.budget__expenses--value {
+    font-size: 220%;
+}
+.budget_expenses{
+    grid-column: 3/4;
+    justify-self: center;
+    height: 140px;
+    width: 250px;
+    background: linear-gradient(146deg, #15b4d2,#5d50c2);
+    border-radius: 10px;
+    padding: 11px;
+    box-shadow: 2px 5px 8px 1px #161616;
+}
+.bdgt {
+    display: grid;
+    grid-template-columns:  70%  30%;
+}
+.budget__expenses--percentage {
+    font-size: 90%;
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 9px;
+    padding: 0 3px;
+    background-color: #18afd1;
+    border-radius: 3px;
+}
+/* bottom */
+.add{
+    padding: 10px;
+    background-color: #101010;
+    border-bottom: 1px solid #323232;
+}
+.add__container {
+    margin: 0 auto;
+    text-align: center;
+}
+.add__type {
+    width: 55px;
+    height: 40px;
+    font-size: 19px;
+    font-weight: 300;
+    color: inherit;
+    border: 1px solid #323232;
+    border-radius: 4px;
+    transition: border 300ms;
+    margin: 2px;
+    background-color: #1a1a1a;
+}
+.add__description,
+.add__value {
+    height: 40px;
+    font-size: 19px;
+    font-weight: 300;
+    border: 1px solid #323232;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 12px 15px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.add__description{
+    width: 400px;
+}
+.add__value{
+    width: 100px;
+}
+.add__btn{
+    padding: 12px 15px;
+    background: linear-gradient(156deg, #5858c3,#1badd1);
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    margin: 4px;
+    height: 38px;
+    line-height: 120%;
+    transform: translateY(-3px);
+}
+.add__btn:active {
+    transform: translateY(-2px);
+}
+.add__type,
+.add__btn:focus,
+.add__value:focus,
+.add__description{
+    outline: none;
+}
+.container {
+    margin: 0 5%;
+    display: grid;
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.income__title {
+    color: #a75ebd;
+    text-align: center;
+}
+.expenses__title {
+    color: #02838d;
+    text-align: center;
+}
+.income__list,
+.expenses__list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.item:nth-child(odd) {
+    margin-right: 70px;
+}
+.item {
+    width: 220px;
+    height: 100px;
+    padding: 8px 10px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    border-radius: 7px;
+    box-shadow: 2px 5px 8px 1px #161616;
+    margin-top: 25px;
+}
+.income .item {
+    background: linear-gradient(145deg, #b45eb7,#2c59ed);
+}
+.expenses .item {
+    background: linear-gradient(145deg, #028b90,#032d67);
+}
+.item__description {
+    font-size: 130%;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.item__value {
+    font-size: 180%;
+    padding-top: 15px;
+}
+.right {
+    grid-column: 1/2;
+}
+.perc {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.item__percentage{
+    justify-self: center;
+    align-self: flex-end;
+    font-size: 60%;
+    padding: 5px;
+    background-color: #4f63c4;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.item__delete--btn {
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 120%;
+    transform: translate(-1px,-8px);
+    font-weight: 800;
+    color: #fff;
+}
+.item__delete--btn:active{
+    transform: translate(-1px,-7px);
+}
