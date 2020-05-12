@@ -1,2 +1,6 @@
-# saurabh
-i am a front end react.js, javascript, html, css developer 
+# deployment link
+https://liocat-sp.github.io/Budget_Calculator/
+# project description 
+built using JavaScript, HTML, css.
+
+
